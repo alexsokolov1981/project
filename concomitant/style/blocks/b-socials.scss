@@ -1,0 +1,21 @@
+ .b-socials{
+     width: 251px;
+     height: 49px;
+     background: $majorColor;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+
+ 
+ 
+ &__icon{
+     font-size: 36px;
+     color: $darkColor;
+     transition-duration: 0.5s;
+     &:hover{
+         color: white;
+         cursor:pointer; 
+     }
+ }
+}

@@ -1,0 +1,36 @@
+.b-siteSearch{
+    height: 30px;
+
+    &__field{
+        border: none;
+        height: inherit;
+        color: $lightColor;
+        padding: 0 10px;
+        outline: none;
+        transition-duration: 0.5s;
+        float:left;
+
+        &:focus{
+            background: lighten($majorColor, 50%);
+        }
+        /*focus - псевдостиль отвечающий за то как элемент при наведении выглядит*/
+    }
+
+    &__btn{
+        background: $LightestColor;
+        text-transform: uppercase;
+         color: $majorColor;
+         font-size: 12px;
+         border:none;
+         height: inherit;
+         border-left: 1px solid $lightColor;
+         transition-duration: 0.5s;
+         outline: none;
+
+         &:hover{
+             cursor: pointer;
+             background:$lightColor;
+             color: $LightestColor;
+         }
+    }   
+}

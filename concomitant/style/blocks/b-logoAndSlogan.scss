@@ -1,0 +1,13 @@
+ .b-logoAndSlogan{
+     &__logo{
+         font-size: 46px;
+         font-variant: small-caps;
+     
+        }
+
+     &__slogan{
+         color: $lightColor;
+         font-size: 12px;
+     }
+
+}

@@ -1,0 +1,49 @@
+ @import "../packages/bootstrap-4.5.3/scss/bootstrap";
+@import "variables.scss";
+@import "blocks/b-header.scss";
+@import "blocks/b-loginNav.scss";
+@import "blocks/b-logoAndSlogan.scss";
+@import "blocks/b-mainNav.scss";
+@import "blocks/b-socials.scss";
+@import "blocks/b-siteSearch.scss";
+@import "blocks/b-mainPageSliderWrap.scss";
+@import "blocks/b-propertyUnit.scss";
+@import "blocks/b-project.scss";
+@import "blocks/b-footer.scss";
+@import "blocks/b-copyrights.scss";
+
+
+
+
+body{
+    color:  $darkColor;
+    font-family: $mainFont;
+    background: #1f1f1f;
+   
+}
+
+.topLine{
+    height: 5px;
+    background: $majorColor;
+    margin: 0 -15px;
+    
+}
+.container{
+    background: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-down(xs){
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.properties{
+    margin-top: 50px;
+}
+.fullWidthDivider{
+    height: 2px;
+    background: #e2e2e2;
+    margin: 50px 0;
+    border: none;
+}

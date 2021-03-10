@@ -1,0 +1,36 @@
+.b-mainNav   {
+    background: $majorColor;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_cancelPadding{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /*это модификатор который   компенсирует наличие паддингов в контейнере, так как  данный блок должен  занимать 100% ширины*/
+
+    @include media-breakpoint-down(lg){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__item{
+        text-transform: uppercase;
+        color: $LightestColor;
+         padding-right: 15px;
+         transition-duration: 0.5s;
+ 
+         &:hover{
+             color:$darkColor;
+             text-decoration: none;
+         }
+     }
+
+     &__siteSearch{
+     @include media-breakpoint-down(lg) {
+         margin-top: 15px;
+     }    
+     }
+
+}

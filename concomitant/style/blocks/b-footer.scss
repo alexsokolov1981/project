@@ -1,0 +1,100 @@
+.b-footer {
+    background: #3b3b3b;
+    padding: 40px 30px;
+    color: $lightColor;
+  
+
+
+    &__unit {
+        @include media-breakpoint-only(md) {
+            &:nth-child(n+3) {
+                margin-top: 30px;
+            }
+            /*этот маржин только для среднего экрана*/
+        }
+
+        @include media-breakpoint-down(sm) {
+            &:nth-child(n+2) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__unitContactDesc {
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    &__unitTitle {
+        color: #666;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__quickLink {
+        display: block;
+        color: inherit;
+        transition-duration: 0.5s;
+        text-decoration: none;
+        border-bottom: 1px solid transparentize($lightColor, 0.8);
+        padding: 10px 0;
+
+        &:hover {
+            color: $majorColor;
+        }
+    }
+
+    &__blogTitle {
+        font-weight: bold;
+    }
+
+    &__blogText {
+        text-align: justify;
+    }
+
+    &__blogMore {
+        color: $majorColor;
+        display: block;
+        text-align: right;
+        padding-top: 10px;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $LightestColor;
+        }
+    }
+
+    &__newsletterInput {
+        display: block;
+        padding: 10px;
+        background: #1f1f1f;
+        color:$lightColor;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        transition-duration: 0.5s;
+        margin-bottom: 10px;
+
+        &:focus {
+            color: $majorColor;
+            box-shadow: 0 0 0 2px $majorColor;
+        }
+    }
+
+    &__newsletterBtn {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: #1f1f1f;
+        color: $majorColor;
+        text-transform: uppercase;
+        outline: none;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $LightestColor;
+            cursor: pointer;
+        }
+    }
+}

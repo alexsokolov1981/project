@@ -1,0 +1,12 @@
+.b-copyrights {
+    min-height: 60px;
+    background-color: #2e2e2e;
+    color: $lightColor;
+    line-height: 60px;
+    padding: 0 15px;
+   
+
+    @include media-breakpoint-down(sm) {
+        line-height: 40px;
+    }
+}
