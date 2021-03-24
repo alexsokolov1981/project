@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        //первое задание
+        let tc=+prompt("введите градусы по цельсию");
+        let tf=(9/5)*tc+32;
+        alert(tf + "  по Форенгейту");
+
+        //второе задание
+
+        
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+
+        // третье задание
+
+        let result1 = 10 + 10 + "10";
+        let result2 = 10 + "10" + 10;
+        let result3 = 10 + 10 + +"10";
+        let result4 = 10 / -"";
+        let result5 = 10 / +"2,5";
+        console.log(result1);
+        console.log(result2);
+        console.log(result3);
+        console.log(result4);
+        console.log(result5);
+        /*1 - сначала складываются 2 числа и мы получаем 20 ,затем 20 и "10" конкатенируются и получаем 2010.
+          2 - тут только конкатенация ибо в каждой операции есть строчное значение, получаем 101010
+          3 - сначала сложение, затем тожесложение, т.к. унарный плюс превращает "10" в число, получаем 30
+          4 - унарный минус преврашает "" в -0, получаем -infynity
+          5 - так как использован знак запятая а не точка то присваивается NaN при делении 10 на NaN получаем Nan*/
+
+
+
+    </script>
+</body>
+</html>
